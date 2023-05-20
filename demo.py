@@ -7,12 +7,6 @@ import numpy as np
 preprocessor=pickle.load(open(r"/home/ramy/سطح المكتب/ahmed/Data Scince and analysis and AI/Data science cousre Epsilon/Machine learning/Linear regression/projects/used cars price project/preprocessor.pkl",'rb'))
 model1 = pickle.load(open(r"/home/ramy/سطح المكتب/ahmed/Data Scince and analysis and AI/Data science cousre Epsilon/Machine learning/Linear regression/projects/used cars price project/model.pkl","rb"))
 
-uploaded_file = st.file_uploader(
-    "preprocessor.pkl", accept_multiple_files=False)
-if uploaded_file is not None:
-    file_name = uploaded_file
-else:
-    file_name = "preprocessor.pkl"
 # streamlit layout
 
 st.set_page_config(page_title="Used cars price prediction",layout="wide")
