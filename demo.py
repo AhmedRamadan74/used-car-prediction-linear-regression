@@ -3,6 +3,13 @@ import pickle
 import pandas as pd
 import numpy as np
 #load preprocessor and model
+uploaded_file = st.file_uploader(
+    "Choose your database", accept_multiple_files=False)
+if uploaded_file is not None:
+    file_name = uploaded_file
+else:
+    file_name = "DatabaseSample.xlsx"
+
 
 preprocessor=pickle.load(open(r"/home/ramy/سطح المكتب/ahmed/Data Scince and analysis and AI/Data science cousre Epsilon/Machine learning/Linear regression/projects/used cars price project/preprocessor.pkl",'rb'))
 model1 = pickle.load(open(r"/home/ramy/سطح المكتب/ahmed/Data Scince and analysis and AI/Data science cousre Epsilon/Machine learning/Linear regression/projects/used cars price project/model.pkl","rb"))
