@@ -4,8 +4,8 @@ import pandas as pd
 import numpy as np
 #load preprocessor and model
 
-preprocessor=pickle.load(open(r"/home/ramy/سطح المكتب/ahmed/Data Scince and analysis and AI/Data science cousre Epsilon/Machine learning/Linear regression/projects/used cars price project/preprocessor.pkl",'rb'))
-model1 = pickle.load(open(r"/home/ramy/سطح المكتب/ahmed/Data Scince and analysis and AI/Data science cousre Epsilon/Machine learning/Linear regression/projects/used cars price project/model.pkl","rb"))
+preprocessor=pickle.load(open("preprocessor.pkl",'rb'))
+model1 = pickle.load(open("model.pkl","rb"))
 
 # streamlit layout
 
