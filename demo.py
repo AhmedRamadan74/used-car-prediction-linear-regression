@@ -51,12 +51,12 @@ Power=st.number_input("Enter Power of car  :")
 
 Seats=st.number_input("Enter Seats of car  :")
 
-data={"Brand":Brand,"model":model,
+data={
       "Location":Location,"Year":Year,
       "Kilometers_Driven":Kilometers_Driven,
       "Fuel_Type":Fuel_Type,"Transmission":Transmission,
       "Owner_Type":Owner_Type,"Mileage":Mileage,
-      "Engine":Engine,"Power":Power,"Seats":Seats}
+      "Engine":Engine,"Power":Power,"Seats":Seats, "Brand":Brand,"model":model}
 df=pd.DataFrame(data,index=[0])
 
 #preproccessing
